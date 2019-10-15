@@ -1,0 +1,15 @@
+runtime: php
+api_version: 2
+threadsafe: true
+env: flex
+
+handlers:
+- url: /
+  script: index.php
+  secure: always
+
+env_variables:
+  # The values here will override those in ".env". This is useful for
+  # production-specific configuration. However, feel free to set these
+  # values in ".env" instead if you prefer.
+  APP_LOG: errorlog
